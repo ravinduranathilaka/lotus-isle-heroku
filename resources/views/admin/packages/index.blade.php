@@ -1,5 +1,5 @@
 <x-app-layout>
-    <x-slot name="header">Manage Packages</x-slot>
+    <x-slot name="header">Manage Packagesabc</x-slot>
 
     <div class="max-w-7xl mx-auto p-4">
         <form method="POST" action="{{ route('admin.packages.store') }}">
