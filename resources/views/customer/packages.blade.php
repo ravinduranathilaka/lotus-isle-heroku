@@ -62,7 +62,7 @@
 
                 <div class="mb-4">
                     <label for="start_date" class="block font-medium">Start Date</label>
-                    <input type="date" name="start_date" required class="border rounded w-full px-3 py-2 mt-1">
+                    <input type="date" name="start_date" min="{{ \Carbon\Carbon::tomorrow()->toDateString() }}" required class="border rounded w-full px-3 py-2 mt-1">
                 </div>
 
                 <div class="mb-4">
