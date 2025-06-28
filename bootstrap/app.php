@@ -17,7 +17,6 @@ return Application::configure(basePath: dirname(__DIR__))
             'admin' => AdminMiddleware::class,
             'customer' => CustomerMiddleware::class,
         ]);
-        $middleware->appendToGroup('web', ForceHttps::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
